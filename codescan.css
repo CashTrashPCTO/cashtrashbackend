@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo{
+    width: 250px;
+    margin-left: 40%;
+}
+
+header{
+    padding-top: 10px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 9999;
+    border-bottom: 0px solid rgb(229, 229, 229);
+    transition-duration: 0.5s;
+}
+
+header li{
+    display: inline;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+header li a{
+    text-decoration: none;
+    align-items: center;
+    color: #31332f;
+    font-weight: 600;
+    font-size: 19px;
+    transition-duration: 0.3s;
+}
+
+header ul li a:hover{
+    font-size: 22px;
+    color: #0C7F59;
+}
+
+.logonoscritta{
+    width: 50px;
+    display: none;
+    margin-left: 50%;
+}
+
+.menu{
+    position: absolute;
+    right: 5%;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.26);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+    padding: 10px;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menuicon{
+    display: none;
+}
+
+@media(max-width: 550px){
+    .logo{
+        display: none;
+    }
+
+    .logonoscritta{
+        display: flex;
+    }
+
+    .hideonmobile{
+        display: none;
+    }
+
+    .menuicon{
+        display: flex;
+    }
+}
